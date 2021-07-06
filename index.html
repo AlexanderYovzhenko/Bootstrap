@@ -1,88 +1,414 @@
 <!doctype html>
 <html lang="en">
   <head>
-    <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <!-- Bootstrap CSS -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
-
+    <link rel="shortcut icon" href="./img/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="./css/bootstrap.min.css">
+    <link rel="stylesheet" href="./css/style.css">
     <title>Bootstrap!</title>
   </head>
   <body>
-    <nav class="navbar navbar-expand-lg navbar-light" style="background-color: rgb(174, 157, 190);">
-      <div class="container-fluid">
-        <a class="navbar-brand" href="#">Navbar</a>
-        <button class="navbar-toggler " type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
-          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-            <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="#">Home</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">Link</a>
-            </li>
-            <li class="nav-item dropdown">
-              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                Dropdown
-              </a>
-              <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                <li><a class="dropdown-item" href="#">Action</a></li>
-                <li><a class="dropdown-item" href="#">Another action</a></li>
-                <li><hr class="dropdown-divider"></li>
-                <li><a class="dropdown-item" href="#">Something else here</a></li>
-              </ul>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
-            </li>
-          </ul>
-          <form class="d-flex">
-            <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-            <button class="btn btn-outline-success" type="submit">Search</button>
-          </form>
+    <header>
+      <nav class="navbar navbar-expand-lg navbar-dark"> 
+        <div class="container-fluid">
+          <a class="navbar-brand" href="https://getbootstrap.com/docs/5.0/components/navbar/" target="_blank">
+            <img src="./img/bootstrap-logo.svg" alt="Logo bootstrap" height="30" class="d-inline-block align-text-top">Navbar Bootstrap</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="https://getbootstrap.com/" target="_blank">Bootstrap Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="https://getbootstrap.com/docs/5.0/getting-started/introduction/" target="_blank">Bootstrap Docs</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  More about bootstrap
+                </a>
+                <ul class="dropdown-menu bg-success" aria-labelledby="navbarDropdown">
+                  <li><a class="dropdown-item" href="https://getbootstrap.com/docs/5.0/examples/" target="_blank">Examples</a></li>
+                  <li><hr class="dropdown-divider"></li>
+                  <li><a class="dropdown-item" href="https://icons.getbootstrap.com/" target="_blank">Bootstrap Icons</a></li>
+                  <li><a class="dropdown-item" href="https://themes.getbootstrap.com/" target="_blank">Bootstrap Themes</a></li>
+                  <li><a class="dropdown-item" href="https://blog.getbootstrap.com/" target="_blank">Bootstrap Blog</a></li>
+                </ul>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <section class="about-bootstrap">
+      <div class="container">
+        <div class="row">
+          <div class="col-12">
+            <h1 class="text-center mb-5">About Bootstrap</h1>
+          </div>
+          <p class="text-center">Bootstrap is the most popular CSS Framework for developing responsive and mobile-first websites.</p>
         </div>
       </div>
-    </nav>
-    
-    <div class="container">
-      <h1>Bootstrap</h1>
-    </div>
-    
+    </section>
 
-    <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
-      <div class="carousel-inner">
-        <div class="carousel-item active">
-          <img src="https://static.tildacdn.com/tild3762-3666-4435-b839-663566623966/lares3.jpg" class="d-block w-100" alt="...">
-        </div>
-        <div class="carousel-item">
-          <img src="http://marinatravel.kz/images/images/1477462921oq7SzPchZ67l5K6o.jpg" class="d-block w-100" alt="...">
-        </div>
-        <div class="carousel-item">
-          <img src="https://ic.pics.livejournal.com/bluesrock/9245921/9377241/9377241_original.jpg" class="d-block w-100" alt="...">
+    <section class="history-bootstrap">
+      <div class="container">
+        <div class="row">
+          <div class="col-12">
+            <h2 class="text-center mb-5">History Bootstrap</h2>
+          </div>
+          <div class="col-12">
+            <p>Originally created by a designer and a developer at Twitter, Bootstrap has become one of the most popular front-end frameworks and open source projects in the world.
+
+              Bootstrap was created at Twitter in mid-2010 by @mdo and @fat. Prior to being an open-sourced framework, Bootstrap was known as Twitter Blueprint. A few months into development, Twitter held its first Hack Week and the project exploded as developers of all skill levels jumped in without any external guidance. It served as the style guide for internal tools development at the company for over a year before its public release, and continues to do so today.
+              
+              Originally released on Friday, August 19, 2011, we’ve since had over twenty releases, including two major rewrites with v2 and v3. With Bootstrap 2, we added responsive functionality to the entire framework as an optional stylesheet. Building on that with Bootstrap 3, we rewrote the library once more to make it responsive by default with a mobile first approach.
+              
+              With Bootstrap 4, we once again rewrote the project to account for two key architectural changes: a migration to Sass and the move to CSS’s flexbox. Our intention is to help in a small way to move the web development community forward by pushing for newer CSS properties, fewer dependencies, and new technologies across more modern browsers.</p>
+          </div>
         </div>
       </div>
-      <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
-        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-        <span class="visually-hidden">Previous</span>
-      </button>
-      <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
-        <span class="carousel-control-next-icon" aria-hidden="true"></span>
-        <span class="visually-hidden">Next</span>
-      </button>
+    </section>
+
+    <section class="" id="list">
+      <div class="container">
+        <div class="row">
+          <div class="col-12">
+            <h2 class="mb-5">What can be done
+              using bootstrap:</h2>
+          </div>
+          <div class="col-12">
+            <h2 class="text-center mb-5">List</h2>
+          </div>
+          <div class="list-group">
+            <a href="#slider" class="list-group-item list-group-item-action">Slider</a>
+            <a href="#text-decoration" class="list-group-item list-group-item-action list-group-item-secondary">Text decoration</a>
+            <a href="#modal" class="list-group-item list-group-item-action list-group-item-primary">Modal window</a>
+            <a href="#card-bootstrap" class="list-group-item list-group-item-action list-group-item-success">Cards</a>
+            <a href="#accordion-bootstrap" class="list-group-item list-group-item-action list-group-item-danger">Accordions</a>
+            <a href="#progress-bootstrap" class="list-group-item list-group-item-action list-group-item-info">Progress</a>
+            <a href="#form-bootstrap" class="list-group-item list-group-item-action list-group-item-warning">Form</a>
+            <a href="#list" class="list-group-item list-group-item-action list-group-item-light">List</a>
+            <a href="https://getbootstrap.com/docs/5.0/getting-started/introduction/" target="_blank" class="list-group-item list-group-item-action list-group-item-dark">And much more (more about bootstrap)</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="slider" id="slider">
+      <div class="container">
+        <div class="row">
+          <div class="col-12">
+            <h2 class="text-center mb-5">Slider</h2>
+          </div>
+          <div class="col-12">
+            <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+              <div class="carousel-indicators">
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+              </div>
+              <div class="carousel-inner">
+                <div class="carousel-item active">
+                  <img src="https://previews.123rf.com/images/arcady31/arcady311010/arcady31101000021/8101098-numbers-one-two-three-1-2-3.jpg" class="d-block w-100 img-fluid" alt="Image one">
+                </div>
+                <div class="carousel-item">
+                  <img src="https://previews.123rf.com/images/arcady31/arcady311010/arcady31101000021/8101098-numbers-one-two-three-1-2-3.jpg" class="d-block w-100 img-fluid" alt="Image two">
+                </div>
+                <div class="carousel-item">
+                  <img src="https://previews.123rf.com/images/arcady31/arcady311010/arcady31101000021/8101098-numbers-one-two-three-1-2-3.jpg" class="d-block w-100 img-fluid" alt="Image three">
+                </div>
+              </div>
+              <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+              </button>
+              <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="text-decoration" id="text-decoration">
+      <div class="container">
+        <div class="row">
+          <div class="col-12">
+            <h2 class="text-center mb-5">Text Decoration</h2>
+          </div>
+          <div class="col-12">
+            <p class="text-decoration-underline">This text has a line underneath it.</p>
+            <p class="text-decoration-line-through">This text has a line going through it.</p>
+            <a href="https://getbootstrap.com/docs/5.0/utilities/text/#text-decoration" target="_blank" class="text-decoration-none">This link has its text decoration removed</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="modal-window" id="modal">
+      <div class="container">
+        <div class="row">
+          <div class="col-12">
+            <h2 class="text-center mb-5">Modal</h2>
+          </div>
+          <div class="col-12 d-flex justify-content-center">
+            <!-- Button trigger modal -->
+            <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
+              Launch modal
+            </button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="card-bootstrap" id="card-bootstrap">
+      <div class="container">
+        <div class="row">
+          <div class="col-12">
+            <h2 class="text-center mb-5">Cards</h2>
+          </div>
+          <div class="col-lg-4 col-md-6 col-sm-12 mb-3">
+            <div class="card mx-auto" style="width: 18rem;">
+              <img src="https://previews.123rf.com/images/sibgat/sibgat1304/sibgat130400039/18984085-first-second-and-third-places-concept-3d-illustration-.jpg" class="card-img-top img-fluid" alt="Image one">
+              <div class="card-body">
+                <h5 class="card-title">Card One</h5>
+                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                <a href="#card-bootstrap" class="btn btn-primary">Go somewhere</a>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6 col-sm-12 mb-3">
+            <div class="card mx-auto" style="width: 18rem;">
+              <img src="https://previews.123rf.com/images/sibgat/sibgat1304/sibgat130400039/18984085-first-second-and-third-places-concept-3d-illustration-.jpg" class="card-img-top img-fluid" alt="Image two">
+              <div class="card-body">
+                <h5 class="card-title">Card Two</h5>
+                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                <a href="#card-bootstrap" class="btn btn-primary">Go somewhere</a>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6 col-sm-12 mb-3">
+            <div class="card mx-auto" style="width: 18rem;">
+              <img src="https://previews.123rf.com/images/sibgat/sibgat1304/sibgat130400039/18984085-first-second-and-third-places-concept-3d-illustration-.jpg" class="card-img-top img-fluid" alt="Image three">
+              <div class="card-body">
+                <h5 class="card-title">Card Three</h5>
+                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                <a href="#card-bootstrap" class="btn btn-primary">Go somewhere</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="accordion-bootstrap" id="accordion-bootstrap">
+      <div class="container">
+        <div class="row">
+          <div class="col-12">
+            <h2 class="text-center mb-5">Accordions</h2>
+          </div>
+          <div class="col-lg-4 col-md-6 col-sm-12 mb-3">
+            <div class="accordion accordion-flush" id="accordionFlushOne">
+              <div class="accordion-item">
+                <h2 class="accordion-header" id="flush-headingOne">
+                  <button class="accordion-button collapsed bg-info text-dark" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOneAccordionOne" aria-expanded="false" aria-controls="flush-collapseOneAccordionOne">
+                    Accordion Item #1
+                  </button>
+                </h2>
+                <div id="flush-collapseOneAccordionOne" class="accordion-collapse collapse" aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushOne">
+                  <div class="accordion-body">Placeholder content for this accordion, which is intended to demonstrate the <code>.accordion-flush</code> class. This is the first item's accordion body.</div>
+                </div>
+              </div>
+              <div class="accordion-item">
+                <h2 class="accordion-header" id="flush-headingTwo">
+                  <button class="accordion-button collapsed bg-info text-dark" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwoAccordionOne" aria-expanded="false" aria-controls="flush-collapseTwoAccordionOne">
+                    Accordion Item #2
+                  </button>
+                </h2>
+                <div id="flush-collapseTwoAccordionOne" class="accordion-collapse collapse" aria-labelledby="flush-headingTwo" data-bs-parent="#accordionFlushOne">
+                  <div class="accordion-body">Placeholder content for this accordion, which is intended to demonstrate the <code>.accordion-flush</code> class. This is the second item's accordion body. Let's imagine this being filled with some actual content.</div>
+                </div>
+              </div>
+              <div class="accordion-item">
+                <h2 class="accordion-header" id="flush-headingThree">
+                  <button class="accordion-button collapsed bg-info text-dark" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseThreeAccordionOne" aria-expanded="false" aria-controls="flush-collapseThreeAccordionOne">
+                    Accordion Item #3
+                  </button>
+                </h2>
+                <div id="flush-collapseThreeAccordionOne" class="accordion-collapse collapse" aria-labelledby="flush-headingThree" data-bs-parent="#accordionFlushOne">
+                  <div class="accordion-body">Placeholder content for this accordion, which is intended to demonstrate the <code>.accordion-flush</code> class. This is the third item's accordion body. Nothing more exciting happening here in terms of content, but just filling up the space to make it look, at least at first glance, a bit more representative of how this would look in a real-world application.</div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6 col-sm-12 mb-3">
+            <div class="accordion accordion-flush" id="accordionFlushTwo">
+              <div class="accordion-item">
+                <h2 class="accordion-header" id="flush-headingOne">
+                  <button class="accordion-button collapsed bg-warning text-dark" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOneAccordionTwo" aria-expanded="false" aria-controls="flush-collapseOneAccordionTwo">
+                    Accordion Item #1
+                  </button>
+                </h2>
+                <div id="flush-collapseOneAccordionTwo" class="accordion-collapse collapse" aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushTwo">
+                  <div class="accordion-body">Placeholder content for this accordion, which is intended to demonstrate the <code>.accordion-flush</code> class. This is the first item's accordion body.</div>
+                </div>
+              </div>
+              <div class="accordion-item">
+                <h2 class="accordion-header" id="flush-headingTwo">
+                  <button class="accordion-button collapsed bg-warning text-dark" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwoAccordionTwo" aria-expanded="false" aria-controls="flush-collapseTwoAccordionTwo">
+                    Accordion Item #2
+                  </button>
+                </h2>
+                <div id="flush-collapseTwoAccordionTwo" class="accordion-collapse collapse" aria-labelledby="flush-headingTwo" data-bs-parent="#accordionFlushTwo">
+                  <div class="accordion-body">Placeholder content for this accordion, which is intended to demonstrate the <code>.accordion-flush</code> class. This is the second item's accordion body. Let's imagine this being filled with some actual content.</div>
+                </div>
+              </div>
+              <div class="accordion-item">
+                <h2 class="accordion-header" id="flush-headingThree">
+                  <button class="accordion-button collapsed bg-warning text-dark" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseThreeAccordionTwo" aria-expanded="false" aria-controls="flush-collapseThreeAccordionTwo">
+                    Accordion Item #3
+                  </button>
+                </h2>
+                <div id="flush-collapseThreeAccordionTwo" class="accordion-collapse collapse" aria-labelledby="flush-headingThree" data-bs-parent="#accordionFlushTwo">
+                  <div class="accordion-body">Placeholder content for this accordion, which is intended to demonstrate the <code>.accordion-flush</code> class. This is the third item's accordion body. Nothing more exciting happening here in terms of content, but just filling up the space to make it look, at least at first glance, a bit more representative of how this would look in a real-world application.</div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6 col-sm-12 mb-3">
+            <div class="accordion accordion-flush" id="accordionFlushThree">
+              <div class="accordion-item">
+                <h2 class="accordion-header" id="flush-headingOne">
+                  <button class="accordion-button collapsed bg-success text-white" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOneAccordionThree" aria-expanded="false" aria-controls="flush-collapseOneAccordionThree">
+                    Accordion Item #1
+                  </button>
+                </h2>
+                <div id="flush-collapseOneAccordionThree" class="accordion-collapse collapse" aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushThree">
+                  <div class="accordion-body">Placeholder content for this accordion, which is intended to demonstrate the <code>.accordion-flush</code> class. This is the first item's accordion body.</div>
+                </div>
+              </div>
+              <div class="accordion-item">
+                <h2 class="accordion-header" id="flush-headingTwo">
+                  <button class="accordion-button collapsed bg-success text-white" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwoAccordionThree" aria-expanded="false" aria-controls="flush-collapseTwoAccordionThree">
+                    Accordion Item #2
+                  </button>
+                </h2>
+                <div id="flush-collapseTwoAccordionThree" class="accordion-collapse collapse" aria-labelledby="flush-headingTwo" data-bs-parent="#accordionFlushThree">
+                  <div class="accordion-body">Placeholder content for this accordion, which is intended to demonstrate the <code>.accordion-flush</code> class. This is the second item's accordion body. Let's imagine this being filled with some actual content.</div>
+                </div>
+              </div>
+              <div class="accordion-item">
+                <h2 class="accordion-header" id="flush-headingThree">
+                  <button class="accordion-button collapsed bg-success text-white" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseThreeAccordionThree" aria-expanded="false" aria-controls="flush-collapseThreeAccordionThree">
+                    Accordion Item #3
+                  </button>
+                </h2>
+                <div id="flush-collapseThreeAccordionThree" class="accordion-collapse collapse" aria-labelledby="flush-headingThree" data-bs-parent="#accordionFlushThree">
+                  <div class="accordion-body">Placeholder content for this accordion, which is intended to demonstrate the <code>.accordion-flush</code> class. This is the third item's accordion body. Nothing more exciting happening here in terms of content, but just filling up the space to make it look, at least at first glance, a bit more representative of how this would look in a real-world application.</div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="progress-bootstrap" id="progress-bootstrap">
+      <div class="container">
+        <div class="row">
+          <div class="col-12">
+            <h2 class="text-center mb-5">Progress</h2>
+          </div>
+          <div class="col-12">
+            <div class="progress mb-3">
+              <div class="progress-bar progress-bar-striped" role="progressbar" style="width: 10%" aria-valuenow="10" aria-valuemin="0" aria-valuemax="100"></div>
+            </div>
+            <div class="progress mb-3">
+              <div class="progress-bar progress-bar-striped bg-success" role="progressbar" style="width: 25%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+            </div>
+            <div class="progress mb-3">
+              <div class="progress-bar progress-bar-striped bg-info" role="progressbar" style="width: 50%" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100"></div>
+            </div>
+            <div class="progress mb-3">
+              <div class="progress-bar progress-bar-striped bg-warning" role="progressbar" style="width: 75%" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
+            </div>
+            <div class="progress mb-3">
+              <div class="progress-bar progress-bar-striped bg-danger" role="progressbar" style="width: 100%" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="form-bootstrap" id="form-bootstrap">
+      <div class="container">
+        <div class="row">
+          <div class="col-12">
+            <h2 class="text-center mb-5">Form</h2>
+          </div>
+          <div class="col-12">
+            <div class="mb-3">
+              <label for="exampleFormControlInput1" class="form-label">Email address</label>
+              <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@mail.com">
+            </div>
+            <div class="mb-3">
+              <label for="exampleFormControlTextarea1" class="form-label">Textarea</label>
+              <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer id="footer"> 
+      <div class="container mx-auto">
+        <div class="row">
+          <div class="col-12">
+            <h3 class="text-center mb-5">My contacts</h3>
+          </div>
+          <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12 d-flex justify-content-center mb-3">
+            <a href="https://www.linkedin.com/in/alexander-yovzhenko-945014192/" target="_blank"><img src="./img/linkedIn.svg" width="50px" alt="LinkedIn"></a>
+          </div>
+          <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12 d-flex justify-content-center mb-3">
+            <a href="https://github.com/GoldenManBel" target="_blank"><img src="./img/github.svg" width="50px" alt="Github"></a>
+          </div>
+          <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12 d-flex justify-content-center mb-3">
+            <a href="mailto:alexander.yovzhenko@gmail.com?subject=Hello Alexander!" target="_blank"><img src="./img/email.png" width="50px" alt="Email"></a>
+          </div>
+          <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12 d-flex justify-content-center mb-3">
+            <a href="https://goldenmanbel.github.io/rsschool-cv/index.html" target="_blank"><img src="./img/resume.png" width="50px" alt="Resume"></a>
+          </div>
+        </div>
+      </div>
+    </footer>
+    
+    
+    <!-- Modal -->
+    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLabel">Modal window</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+            <p>Bootstrap is the most popular CSS Framework for developing responsive and mobile-first websites.</p>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+            <button type="button" disabled class="btn btn-primary">Save changes</button>
+          </div>
+        </div>
+      </div>
     </div>
 
-
-    <!-- Option 1: Bootstrap Bundle with Popper -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
-
-    <!-- Option 2: Separate Popper and Bootstrap JS -->
-    <!--
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
-    -->
+    <script src="./js/bootstrap.bundle.min.js"></script>
   </body>
 </html>
