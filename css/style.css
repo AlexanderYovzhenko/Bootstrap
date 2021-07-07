@@ -3,19 +3,9 @@
     --color2: #52339a;
 }
 
-section {
-    padding: 100px 0;
-}
 
 header {
     padding: 0 0 100px 0;
-}
-
-footer {
-    padding: 40px 0;
-}
-
-header {
     background: url(../img/pattern.png), var(--color1);
     background: url(../img/pattern.png), -moz-linear-gradient(left, var(--color1) 0%, var(--color2) 100%);
     background: url(../img/pattern.png), -webkit-linear-gradient(left, var(--color1) 0%, var(--color2) 100%);
@@ -26,7 +16,12 @@ header {
     background-size: contain;
 }
 
+section {
+    padding: 100px 0;
+}
+
 footer {
+    padding: 40px 0;
     background: url(../img/pattern.png), var(--color2);
     background: url(../img/pattern.png), -moz-linear-gradient(left, var(--color2) 0%, var(--color1) 100%);
     background: url(../img/pattern.png), -webkit-linear-gradient(left, var(--color2) 0%, var(--color1) 100%);
@@ -37,7 +32,49 @@ footer {
     background-size: contain;
 }
 
+h1 {
+    color: var(--color2);
+}
+h2 {
+    color: var(--color1);
+}
 
 .history-bootstrap, .slider, .modal-window, .accordion-bootstrap, .form-bootstrap {
     background: rgb(222, 222, 222);
+}
+
+.carousel-item {
+    max-height: 800px;
+    overflow: hidden;
+}
+.carousel-item img {
+    max-height: 700px;
+}
+
+@media screen and (max-width: 1200px) {
+    .carousel-item {
+        max-height: 600px;
+        overflow: hidden;
+    }
+    .carousel-item img {
+        max-height: 550px;
+    }
+}
+@media screen and (max-width: 1000px) {
+    .carousel-item {
+        max-height: 400px;
+        overflow: hidden;
+    }
+    .carousel-item img {
+        max-height: 330px;
+    }
+}
+@media screen and (max-width: 600px) {
+    .carousel-item {
+        max-height: 250px;
+        overflow: hidden;
+    }
+    .carousel-item img {
+        max-height: 200px;
+    }
 }
